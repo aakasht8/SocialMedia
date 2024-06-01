@@ -7,7 +7,6 @@ WORKDIR /code
 # Install the PostgreSQL client tools.
 RUN apt-get update && apt-get install -y postgresql-client
 
-# Copy the requirements file into the container at /code.
 COPY requirements.txt /code/
 
 # Install the dependencies.
