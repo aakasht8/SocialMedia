@@ -161,7 +161,7 @@ class ListFriends(APIView):
         friends = []
         curr_user = request.user
         friends_queryset = FriendRequest.objects.filter(Q(receiver_id=curr_user.id, status='ACCEPTED')
-                                               | Q(receiver_id=curr_user.id, status='ACCEPTED'))
+                                               | Q(sender_id=curr_user.id, status='ACCEPTED'))
         for friend_request in friends_queryset:
             if friend_request.sender == curr_user:
                 friends.append(friend_request.receiver)
