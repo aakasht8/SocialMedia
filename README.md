@@ -1,7 +1,9 @@
 # Project Name: Social Media Application
 
 **Description:** Django project created to manage multiple users, allowing them to interact with other users via friend requests.
+
 **Info:** I have created a database snapshot and initilized the database with about 20 users and 15 friend requests. All the users have the same password English.
+
 **Tech Stack:** Python Django, Postgresql, Docker, Docker-Compose.
 
 
