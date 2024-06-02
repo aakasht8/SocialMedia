@@ -72,6 +72,9 @@ class SendFriendRequest(APIView):
         except User.DoesNotExist:
             return Response({'message': 'Receiver does not exist'}, status=status.HTTP_404_NOT_FOUND)
 
+        if sender == receiver:
+            return Response({'message': 'Cannot send friend request to yourself.'}, status=status.HTTP_400_BAD_REQUEST)
+
         # Check if a friend request already exists
         if FriendRequest.objects.filter(Q(sender=sender, receiver=receiver) |
                                         Q(sender=receiver, receiver=sender)).exists():
