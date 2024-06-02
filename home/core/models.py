@@ -9,6 +9,7 @@ User = get_user_model()
 
 
 class FriendRequest(models.Model):
+    id = models.AutoField(primary_key=True)
     sender = models.ForeignKey(User, related_name='sent_friend_requests', on_delete=models.CASCADE)
     receiver = models.ForeignKey(User, related_name='received_friend_requests', on_delete=models.CASCADE)
     status = models.CharField(max_length=100, default='PENDING')
@@ -16,3 +17,4 @@ class FriendRequest(models.Model):
 
     class Meta:
         unique_together = ('sender', 'receiver')
+

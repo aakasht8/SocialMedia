@@ -397,32 +397,32 @@ COPY public.auth_permission (id, name, content_type_id, codename) FROM stdin;
 -- Data for Name: auth_user; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.auth_user (id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined) FROM stdin;
-1	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Neville			neville@england.com	f	t	2024-06-01 11:26:13.256288+00
-2	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Franklin			franklin@example.com	f	t	2024-06-01 11:26:13.256+00
-3	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Jacqueline			jacqueline@example.com	f	t	2024-06-01 11:26:13.256+00
-4	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Victoria			victoria@example.com	f	t	2024-06-01 11:26:13.256+00
-5	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Ernest			ernest@example.com	f	t	2024-06-01 11:26:13.256+00
-6	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Samantha			samantha@example.com	f	t	2024-06-01 11:26:13.256+00
-7	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Oliver			oliver@example.com	f	t	2024-06-01 11:26:13.256+00
-8	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Teresa			teresa@example.com	f	t	2024-06-01 11:26:13.256+00
-9	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Diana			diana@example.com	f	t	2024-06-01 11:26:13.256+00
-10	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Lester			lester@example.com	f	t	2024-06-01 11:26:13.256+00
-11	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Maureen			maureen@example.com	f	t	2024-06-01 11:26:13.256+00
-12	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Phillip			phillip@example.com	f	t	2024-06-01 11:26:13.256+00
-13	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Beth			beth@example.com	f	t	2024-06-01 11:26:13.256+00
-14	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Shane			shane@example.com	f	t	2024-06-01 11:26:13.256+00
-15	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Liam			liam@example.com	f	t	2024-06-01 11:26:13.256+00
-16	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Charlotte			charlotte@example.com	f	t	2024-06-01 11:26:13.256+00
-17	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Theodore			theodore@example.com	f	t	2024-06-01 11:26:13.256+00
-18	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Eleanor			eleanor@example.com	f	t	2024-06-01 11:26:13.256+00
-19	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Leo			leo@example.com	f	t	2024-06-01 11:26:13.256+00
-20	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Grace			grace@example.com	f	t	2024-06-01 11:26:13.256+00
-21	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Elias			elias@example.com	f	t	2024-06-01 11:26:13.256+00
-22	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Hazel			hazel@example.com	f	t	2024-06-01 11:26:13.256+00
-23	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Olivia			olivia@example.com	f	t	2024-06-01 11:26:13.256+00
-24	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Henry			henry@example.com	f	t	2024-06-01 11:26:13.256+00
-25	pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Emma			emma@example.com	f	t	2024-06-01 11:26:13.256+00
+COPY public.auth_user (password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined) FROM stdin;
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Neville			neville@england.com	f	t	2024-06-01 11:26:13.256288+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Franklin			franklin@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Jacqueline			jacqueline@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Victoria			victoria@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Ernest			ernest@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Samantha			samantha@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Oliver			oliver@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Teresa			teresa@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Diana			diana@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Lester			lester@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Maureen			maureen@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Phillip			phillip@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Beth			beth@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Shane			shane@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Liam			liam@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Charlotte			charlotte@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Theodore			theodore@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Eleanor			eleanor@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Leo			leo@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Grace			grace@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Elias			elias@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Hazel			hazel@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Olivia			olivia@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	Aditi			henry@example.com	f	t	2024-06-01 11:26:13.256+00
+pbkdf2_sha256$600000$39bu59S6iQU0dUMuuNgCMG$RfxSQZwsk+QuetYqrEg4iHo1BcrWTVYHzWXMCgv+HBM=	\N	f	AakashT			aakash@example.com	f	t	2024-06-01 11:26:13.256+00
 \.
 
 
@@ -455,27 +455,27 @@ COPY public.authtoken_token (key, created, user_id) FROM stdin;
 -- Data for Name: core_friendrequest; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.core_friendrequest (id, "timestamp", receiver_id, sender_id, status) FROM stdin;
-2	2024-06-01 12:08:46.116+00	3	1	PENDING
-3	2024-06-01 12:08:46.116+00	5	12	PENDING
-4	2024-06-01 12:08:46.116+00	7	18	PENDING
-5	2024-06-01 12:08:46.116+00	10	20	PENDING
-6	2024-06-01 12:08:46.116+00	15	21	PENDING
-7	2024-06-01 12:08:46.116+00	20	9	PENDING
-8	2024-06-01 12:08:46.116+00	8	4	PENDING
-9	2024-06-01 12:08:46.116+00	25	2	PENDING
-10	2024-06-01 12:08:46.116+00	11	6	PENDING
-11	2024-06-01 12:08:46.116+00	13	19	PENDING
-12	2024-06-01 12:08:46.116+00	16	17	PENDING
-13	2024-06-01 12:08:46.116+00	22	5	PENDING
-14	2024-06-01 12:08:46.116+00	24	23	PENDING
-15	2024-06-01 12:08:46.116+00	1	8	PENDING
-16	2024-06-01 12:08:46.116+00	14	7	PENDING
-17	2024-06-01 12:08:46.116+00	18	16	PENDING
-18	2024-06-01 12:08:46.116+00	9	13	PENDING
-19	2024-06-01 12:08:46.116+00	6	22	PENDING
-20	2024-06-01 12:08:46.116+00	17	3	PENDING
-21	2024-06-01 12:08:46.116+00	2	14	PENDING
+COPY public.core_friendrequest ("timestamp", receiver_id, sender_id, status) FROM stdin;
+2024-06-01 12:08:46.116+00	3	1	PENDING
+2024-06-01 12:08:46.116+00	5	12	PENDING
+2024-06-01 12:08:46.116+00	7	18	PENDING
+2024-06-01 12:08:46.116+00	10	20	PENDING
+2024-06-01 12:08:46.116+00	15	21	PENDING
+2024-06-01 12:08:46.116+00	20	9	PENDING
+2024-06-01 12:08:46.116+00	8	4	PENDING
+2024-06-01 12:08:46.116+00	25	2	PENDING
+2024-06-01 12:08:46.116+00	11	6	PENDING
+2024-06-01 12:08:46.116+00	13	19	PENDING
+2024-06-01 12:08:46.116+00	16	17	PENDING
+2024-06-01 12:08:46.116+00	22	5	PENDING
+2024-06-01 12:08:46.116+00	24	23	PENDING
+2024-06-01 12:08:46.116+00	1	8	PENDING
+2024-06-01 12:08:46.116+00	14	7	PENDING
+2024-06-01 12:08:46.116+00	18	16	PENDING
+2024-06-01 12:08:46.116+00	9	13	PENDING
+2024-06-01 12:08:46.116+00	6	22	PENDING
+2024-06-01 12:08:46.116+00	17	3	PENDING
+2024-06-01 12:08:46.116+00	2	14	PENDING
 \.
 
 
@@ -598,7 +598,7 @@ SELECT pg_catalog.setval('public.auth_user_user_permissions_id_seq', 1, false);
 -- Name: core_friendrequest_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.core_friendrequest_id_seq', 4, true);
+SELECT pg_catalog.setval('public.core_friendrequest_id_seq', 20, true);
 
 
 --
