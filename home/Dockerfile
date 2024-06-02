@@ -15,12 +15,16 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the current directory contents into the container at /code.
 COPY . /code/
 
-COPY wait_for_db.sh /wait_for_db.sh
-RUN chmod +x /wait_for_db.sh
+# COPY wait_for_db.sh /wait_for_db.sh
+# RUN chmod +x /wait_for_db.sh
 
 # Define environment variable.
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 # Run migrations and start the Django development server.
-CMD ["sh", "-c", "/wait_for_db.sh db python manage.py migrate && python manage.py runserver 0.0.0.0:8000"]
+CMD ["sh", "-c", "until pg_isready -h db -U postgres; do echo 'Waiting for database...'; sleep 1; done && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"]
+
+
+
+# CMD ["sh", "-c", "/wait_for_db.sh db python manage.py migrate && python manage.py runserver 0.0.0.0:8000"]
