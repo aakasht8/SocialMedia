@@ -27,7 +27,7 @@ To run this project locally using Docker, follow these steps:
 
 5. **Import the file: Postman.json in the home directory to import the postman collection.**
 
-6. **Import the file: Postman.json in the home directory to import the postman environment collection.**
+6. **Import the file: Postman_Env.json in the home directory to import the postman environment collection.**
 
 
 
