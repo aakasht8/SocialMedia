@@ -1,14 +1,14 @@
-**Project Name:** Social Media Application
+# Project Name: Social Media Application
 
 **Description:** Django project created to manage multiple users, allowing them to interact with other users via friend requests.
 
-## Table of Contents
+# Table of Contents
 
 1. [Installation](#installation)
 2. [API Usage](#api-usage)
 
-**Installation**
 
+# Installation
 To run this project locally using Docker, follow these steps:
 
 1. **Clone the repository:**
@@ -25,9 +25,13 @@ To run this project locally using Docker, follow these steps:
 
 4. **Once the containers are running, you can access the Django application at http://localhost:8000 in your web browser or Postman**
 
+5. **Import the file: Postman.json in the home directory to import the postman collection.**
 
-**API Usage**
+6. **Import the file: Postman.json in the home directory to import the postman environment collection.**
 
+
+
+# API Usage 
 These are the following API's included in this project
 
 1. **Signup a new User:**
