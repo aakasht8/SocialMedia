@@ -69,12 +69,14 @@ These are the following API's included in this project
    {"receiver_id": 4}
 
 6. **Respond to friend requests:**
-   API url: http://127.0.0.1:8000/api/respond_request/22/1 (POST Method)
-
-7. **List friend requests:**
+   API url: http://127.0.0.1:8000/api/respond_request/<request_id>/<action> (POST Method)
+   Request Id: Pass the request id to peform action on
+   Action Id: 0 is to REJECT the request and 1 is to ACCEPT the request.
+   
+8. **List friend requests:**
    API url: http://127.0.0.1:8000/api/list_requests/ (GET Method)
 
-8. **List friends:**
+9. **List friends:**
    API url: http://127.0.0.1:8000/api/list_friends/ (GET Method)
 
 
