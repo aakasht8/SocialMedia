@@ -24,4 +24,54 @@ To run this project locally using Docker, follow these steps:
    docker-compose up --build
 
 4. **Once the containers are running, you can access the Django application at http://localhost:8000 in your web browser or Postman**
+
+
+**API Usage**
+
+These are the following API's included in this project
+
+1. **Signup a new User:**
+   API url: http://127.0.0.1:8000/api/signup/ (POST Method)
+
+   Request Body:
+   ```json
+   {
+    "username": "Sarthak",
+    "email": "sarthak@england.com",
+    "password": "England"
+   }
+
+2. **Login to existing User:**
+   API url: http://127.0.0.1:8000/api/signup/ (POST Method)
+
+   Request Body:
+      ```json
+   {
+       "username": "Elias",
+       "password": "England"
+   }
+
+3. **Logout User:**
+   API url: http://127.0.0.1:8000/api/logout/ (POST Method)
+
+4. **Search Users:**
+   API url: http://127.0.0.1:8000/api/search?search=a (GET Method)
+
+5. **Send friend request to User:**
+   API url: http://127.0.0.1:8000/api/send_request/ (POST Method)
+
+   Request Body:
+      ```json
+   {"receiver_id": 4}
+
+6. **Respond to friend requests:**
+   API url: http://127.0.0.1:8000/api/respond_request/22/1 (POST Method)
+
+7. **List friend requests:**
+   API url: http://127.0.0.1:8000/api/list_requests/ (GET Method)
+
+8. **List friends:**
+   API url: http://127.0.0.1:8000/api/list_friends/ (GET Method)
+
+
     
